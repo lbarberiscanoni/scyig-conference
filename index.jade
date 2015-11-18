@@ -1,8 +1,16 @@
 doctype html
 head
     title Bill Tracker
+    //responsive interface
+    meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    meta(name="HandheldFriendly" content="true")
+
+    //styling
     link(rel="stylesheet", href="stylesheets/bootstrap/bootstrap.css")
     link(rel="stylesheet", href="stylesheets/home.css")
+
+    //jQuery and Firebase
     script(src="//code.jquery.com/jquery-1.11.3.min.js")
     script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
     script(src="https://cdn.firebase.com/js/client/2.2.6/firebase.js")
@@ -13,9 +21,3 @@ body
         a(href="views/legislator.html").btn.btn-default LEGISLATIVE
         a(href="views/attorney.html").btn.btn-default JUDICIAL
         a(href="views/support.html").btn.btn-default SUPPORT
-    .footer
-        p A 
-            a(href="#" target="blank") Lorenzo Barberis Canonico 
-            | production & 
-            a(href="http://www.alyweir.com" target="blank") Aly Weir 
-            | design
