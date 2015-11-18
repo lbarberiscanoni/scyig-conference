@@ -58,6 +58,7 @@ $(document).ready(function() {
                         "attire": newEventInfo[6],
                     });
                 };
+
                 updateCalendar();
                 window.location.reload();
             };
