@@ -1,0 +1,53 @@
+doctype html
+head
+    title Bill Tracker
+
+    //responsive interface
+    meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    meta(name="HandheldFriendly" content="true")
+
+    //styling
+    link(rel="stylesheet", href="../stylesheets/bootstrap/bootstrap.css")
+
+    //jQuery and Firebase
+    script(src="//code.jquery.com/jquery-1.11.3.min.js")
+    script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+    script(src="https://cdn.firebase.com/js/client/2.2.6/firebase.js")
+body
+    .container
+        .row
+            h1.text-center Candidates 
+                a(href="../index.html").btn.btn-default HOME
+        .row
+            h2.text-center Governor
+            .row
+                .col-md-3
+                .col-md-6#governor
+                .col-md-3
+        .row
+            h2.text-center Lieutenant Governor
+            .row
+                .col-md-3
+                .col-md-6#lieutenantgovernor
+                .col-md-3
+        .row
+            h2.text-center Speaker of The House
+            .row
+                .col-md-3
+                .col-md-6#speakerofthehouse
+                .col-md-3
+        .row
+            h2.text-center Attorney General
+            .row
+                .col-md-3
+                .col-md-6#attorneygeneral
+                .col-md-3
+       .row
+            h2.text-center Secretary of State
+            .row
+                .col-md-3
+                .col-md-6#secretaryofstate
+                .col-md-3
+    script(src="../scripts/candidates.js")
+

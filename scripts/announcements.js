@@ -1,21 +1,6 @@
 var listOfAnnouncements = new Firebase("https://yig-bill-tracker.firebaseio.com/announcements");
 
 $(document).ready(function() {
-    //option to make new announcements
-    $("#submit").click(function() {
-        var announcementTitle = $("#announcementTitle").val();
-        var announcementText = $("#announcementText").val();
-        var timeStamp = new Date().getTime();
-        var timeStamp = parseInt(timeStamp / 1000).toString();
-        listOfAnnouncements.push({
-            title: announcementTitle,
-            content: announcementText,
-            timestamp: timeStamp,
-        });
-        alert("success!");
-        window.location.reload();
-    });
-
     //showing all annoucnments in order of recency
     listOfAnnouncements.on("child_added", function(snapshot) {
         var announcement = snapshot.val();

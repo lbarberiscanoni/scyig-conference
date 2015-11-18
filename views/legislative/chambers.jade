@@ -1,22 +1,26 @@
 doctype html
 head
     title Bill Tracker
+
     //responsive interface
     meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no")
     meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
     meta(name="HandheldFriendly" content="true")
 
     //styling
-    link(rel="stylesheet", href="stylesheets/bootstrap/bootstrap.css")
-    link(rel="stylesheet", href="stylesheets/home.css")
+    link(rel="stylesheet", href="../../stylesheets/bootstrap/bootstrap.css")
 
     //jQuery and Firebase
     script(src="//code.jquery.com/jquery-1.11.3.min.js")
     script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
     script(src="https://cdn.firebase.com/js/client/2.2.6/firebase.js")
 body
-    .headerWrap
-        h1 Welcome to South Carolina Youth in Government
-    .nav
-        a(href="views/legislator.html").btn.btn-default LEGISLATIVE
-        a(href="views/attorney.html").btn.btn-default JUDICIAL
+    .container.text-center
+        .row
+            h1 Track Bills
+                a(href="../legislator.html").btn.btn-default BACK
+            button.btn.btn-default#committees Committees
+            button.btn.btn-default#premierChambers Premier Chambers
+            button.btn.btn-default#upperChambers Upper Chambers
+        .row#chamberSelection
+    script(src="../../scripts/clerk.js")
