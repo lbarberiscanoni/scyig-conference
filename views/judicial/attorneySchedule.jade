@@ -15,16 +15,17 @@ head
     //Firebase
     script(src="https://cdn.firebase.com/js/client/2.2.6/firebase.js")
 body
-    h1.text-center Attorney Schedule
-        a(href="../attorney.html").btn.btn-default BACK
-    .row
-        .col-md-4
-        .col-md-4
-            select#division.form-control
-                option Select a Division
-                option mock trial
-                option appeals
-        .col-md-4
-    .row
-        #schedule
+    .container
+        h1.text-center Attorney Schedule
+            a(href="../attorney.html").btn.btn-default BACK
+        .row
+            .col-md-4
+            .col-md-4
+                select#division.form-control
+                    option Select a Division
+                    option mock trial
+                    option appeals
+            .col-md-4
+        .row
+            #schedule
     script(src="../../scripts/attorneySchedule.js")
