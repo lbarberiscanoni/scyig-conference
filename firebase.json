@@ -1,0 +1,9 @@
+{
+  "firebase": "scyig-conference",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
