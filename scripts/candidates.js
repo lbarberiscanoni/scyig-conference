@@ -13,8 +13,10 @@ $(document).ready(function() {
                     var candidateBeingLookedUp = snapshot.val();
                     if (candidateBeingLookedUp.name == nameToBeSearched) {
                         page = window.open();
+                        var boostrap = "<link rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>"
+                        var responsiveMetaTags = "<meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1'>"
                         page.document.write(
-                            "<!DOCTYPE html><html><head><link rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'></head><body>" + 
+                            "<!DOCTYPE html><html><head>" + responsiveMetaTags + boostrap + "</head><body>" + 
                             "<div class='container'>" + 
                             "<a href='candidates.html' class='btn btn-default'>BACK</a>" + 
                             "<h1 class='text-center'>" + nameToBeSearched + "</h1>" + 
