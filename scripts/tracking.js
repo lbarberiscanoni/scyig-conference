@@ -70,7 +70,9 @@ $(document).ready(function() {
     };
 
     //getting the chamber the user is looking at 
-    var chamberName = $(this).text().replace("BACK", "").split("Tracker")[1];
+    //var chamberName = $(this).text().replace("BACK", "").split("Tracker")[1];
+    var chamberName = $("h1").text().replace("BACK", "");
+    console.log(chamberName);
     if (chamberName.split(" ").indexOf("House") < 0 && chamberName.split(" ").indexOf("Senate") < 0) {
         var thisChamberDivision = chamberName.split(" ")[0].replace(" ", "");
         var premierTruthValue =  0 + (thisChamberDivision == "Premier");
