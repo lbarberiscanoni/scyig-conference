@@ -40,7 +40,7 @@ $(document).ready(function() {
                                     "</head><body>" +
                                     "<div class=" + "container" + ">" + 
                                     "<h1 class=" + "text-center" + ">" + bill.billTitle + "</h1>" +
-                                    "</div></div></body>" + seeBill + "</html>"
+                                    "</div></div></body>" + bill.billText + "</html>"
                                 );
                             });
                         };
